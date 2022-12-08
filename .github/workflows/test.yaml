@@ -5,25 +5,12 @@ on:
     
 jobs:
   update-files:
-    runs-on: ubuntu-20.04  #runner
+    runs-on: ubuntu-latest  #
     name: Update file content
     steps:
         #This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
       - name: Checkout
-        uses: actions/checkout@v3 
-
-        #Downloading and caching distribution of the requested Node.js version, and adding it to the PATH
-      - name: Set Node.js 16.x
-        uses: actions/setup-node@v3.5.1
-        with:
-          node-version: 16.x
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Building action
-        run: npm run build
-      
+        uses: actions/checkout@v3               
         
       - name: update files
         id: update
