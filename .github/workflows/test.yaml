@@ -5,7 +5,7 @@ on:
     
 jobs:
   update-files:
-    runs-on: ubuntu-latest  #
+    runs-on: ubuntu-latest  
     name: Update file content
     steps:
         #This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
