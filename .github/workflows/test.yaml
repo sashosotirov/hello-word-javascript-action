@@ -21,6 +21,6 @@ jobs:
           remote-file: README.md
           current-file: README.md
           remoteToken: ${{ secrets.GH_PAT }}
-          currentToken: for test 
+          currentToken: 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 
           
       
