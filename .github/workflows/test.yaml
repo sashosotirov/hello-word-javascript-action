@@ -16,7 +16,7 @@ jobs:
         id: update
         uses: sashosotirov/hw4@main
         with:
-          remote-repo: kubernetes_wildfly
+          remote-repo: _wildfly
           remote-owner: sashosotirov
           remote-file: README.md
           current-file: README.md
