@@ -1,5 +1,5 @@
 
-# triger workflow event
+# triger workflow events
 on: 
   push:
     
@@ -16,7 +16,7 @@ jobs:
         id: update
         uses: sashosotirov/hw4@main
         with:
-          remote-repo: _wildfly
+          remote-repo: kubernetes_wildfly
           remote-owner: sashosotirov
           remote-file: README.md
           current-file: README.md
