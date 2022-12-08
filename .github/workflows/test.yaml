@@ -2,10 +2,12 @@
 # triger workflow events
 on: 
   push:
+  workflow_dispatch:
+    
     
 jobs:
   update-files:
-    runs-on: ubuntu-20.04 
+    runs-on: ubuntu-20.04 #
     name: Update file content
     steps:
         #This action checks-out your repository under $GITHUB_WORKSPACE, so your workflow can access it.
